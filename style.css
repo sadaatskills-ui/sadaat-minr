@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080D1C;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.app {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 90px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+header h2 {
+    color: #B89AFF;
+    font-size: 20px;
+}
+
+header span {
+    background: #183B38;
+    color: #35E6A1;
+    padding: 7px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+.balance {
+    background: linear-gradient(135deg, #35216C, #164C85);
+    padding: 30px 15px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.balance h1 {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.balance p {
+    color: #C5CBE0;
+}
+
+.mining,
+.wallet,
+.deposit {
+    background: #151E34;
+    border: 1px solid #293657;
+    padding: 22px;
+    border-radius: 18px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.mining h2,
+.wallet h2,
+.deposit h2 {
+    margin-bottom: 15px;
+}
+
+button {
+    background: linear-gradient(135deg, #7955E8, #287DEB);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.mining button,
+.wallet button,
+.deposit button {
+    width: 100%;
+    margin-top: 15px;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+#mining-status,
+#walletAddress {
+    color: #AAB7D4;
+    font-size: 13px;
+    margin-top: 10px;
+    overflow-wrap: anywhere;
+}
+
+.deposit h1 {
+    color: #B99AFF;
+    margin: 12px 0;
+    font-size: 30px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.features button {
+    min-height: 65px;
+    background: #192640;
+    border: 1px solid #34466D;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #111A2D;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 5px;
+    border-top: 1px solid #293657;
+}
+
+nav button {
+    background: transparent;
+    padding: 8px;
+    font-size: 12px;
+}
+
+@media (max-width: 350px) {
+    .app {
+        padding: 12px;
+    }
+
+    .balance h1 {
+        font-size: 24px;
+    }
+}
